@@ -3,7 +3,6 @@
 
 body{
 	text-align: center;
-	text-face: arial;
 	padding-left: 5%;
 	padding-right: 5%;
 	margin-bottom: 25;
@@ -25,6 +24,15 @@ img {
 	h2 {
 		font-size: 16px !important;
 	}
+	/* a.image {
+		margin: 7px !important;
+	} */
+}
+@media (max-width: 300px) {
+	a.image {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+	}
 }
 #header{
 	max-height: 274;
@@ -38,8 +46,12 @@ div {
 	margin-bottom: 20;
 	margin-top: 20;
 }
+img.thumb {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 #mainBox{
-	/* width: 600px; */
 	padding: 5%;
 	max-width: 100%;
 	text-align: left;
@@ -51,15 +63,19 @@ div {
 #mainBox > p {
 	max-width: 600px;
 }
-#mainBoxSize {
-	width: 694;
-}
 h1 {
 	font-family: arial;
 	font-size: 26px;
 }
 h2 {
-		margin-top: 0;
-
+	margin-top: 0;
 	font-size: 22px;
+}
+a, h1, h2 {
+	font-family: arial;
+}
+a.image {
+    display: inline-block;
+	margin: 2%;
+	max-width: 100%;
 }
